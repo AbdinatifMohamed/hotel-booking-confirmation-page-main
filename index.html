@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap" rel="stylesheet">
+
+
+  <title>Frontend Mentor | Hotel booking confirmation page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 0.6875rem; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    .font-fraunces {
+      font-family: 'Fraunces', sans-serif;
+    }
+    .font-mono {
+      font-family: 'DM Mono', sans-serif;
+    }
+    .font-sans {
+      font-family: 'DM Sans', sans-serif;
+    }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-[hsl(35_60%_96%)] min-h-screen">
+  <header class="border-b-1 border-black/20 mb-4">
+      <div class="flex items-center justify-between px-4 py-3">
+          <img class="h-10" src="./assets/images/logo.svg" alt="">
+          <button class="border-1 p-1 rounded-sm border-black/20">
+              <img src="./assets/images/icon-menu.svg" alt="">
+          </button>
+      </div>
+  </header>
+  <!-- Sidebar starts 
+
+  Maison Soleil
+
+  Guest navigation
+  Your stay
+  1
+  The house
+  Around town
+  Breakfast
+  Messages
+
+  Local weather 
+  Today in Cassis
+  27°
+  Sunny · light breeze
+
+ 
+
+  <!- Sidebar ends -->
+
+  <!-- Main content starts -->
+
+  <main class="px-4 mb-10">
+      <div class="mb-10" >
+        <p class="uppercase font-mono text-black/50 mb-2">Booking · Confirmed</p>
+        <h2 class="font-fraunces text-[hsl(33_15%_15%)] text-4xl mb-5 font-medium">Bienvenue, <span class="text-[hsl(15_74%_41%)] italic">Lucia.</span></h2>
+        <div class="flex justify-between">
+            <button class="border-1 text-[hsl(33_15%_15%)] rounded-full px-7 py-2 font-sans font-bold">Print receipt</button>
+            <button class="bg-[hsl(33_15%_15%)] text-white rounded-full px-7 py-2 font-sans font-bold">Add to calender</button>
+        </div>
+      </div>
+      <div class="relative py-5 px-5 rounded-2xl  bg-gradient-to-tr from-[hsl(15_74%_41%)] to-[hsl(22_72%_56%)] rotate-[2deg] shadow-2xl shadow-[hsl(15_74%_41%)]/50  mb-5">
+          <hr class="border-dotted mb-3 border-white">
+          <p class="uppercase font-mono text-white/80 mb-12 text-sm">Welcome Card</p>
+          <img  class="absolute top-10 right-4"  src="./assets/images/icon-sun.svg" alt="">
+
+          <p class="font-fraunces text-[hsl(45_100%_74%)] mb-2 text-xl italic">A note from your host,</p>
+          <h2 class="font-fraunces text-white text-3xl italic mb-5">Margaux.</h2>
+          <p class="text-white/80 mb-20">We're so glad you're coming. The shutters will be open, the lemonade cold, and the cat - Poivre - pretending not to notice you.</p>
+
+          <div>
+            <p class="font-mono uppercase text-white/80 text-sm">Room</p>
+            <h3 class="font-fraunces text-white text-xl">La Garrigue</h3>
+          </div>
+      </div>
+      <div class="py-5 px-5 rounded-2xl shadow-2xl rotate-[-2deg] mb-10 bg-gradient-to-b from-white/10 via-white to-white to-[20%]">
+            <div class="flex items-center justify-between mb-5">
+              <div>
+                <p class="font-mono uppercase text-black/80">Receipt</p>
+                <p class="font-fraunces text-xl font-medium">Your stay</p>
+              </div>
+              <div class="font-mono text-right">
+                <p class="text-black/80">№ MS-2026</p>
+                <p class="text-black/80">0421-AH</p>
+              </div>
+            </div>
+            <hr class="border-dotted mb-5 border-black">
+            <div class="flex items-center justify-between mb-5">
+                <div class="flex flex-col items-center justify-center gap-2">
+                <p class="font-mono uppercase text-black/80">Check In</p>
+                <h3 class="font-fraunces text-4xl">25 Apr</h3>
+                <p class="font-sans text-black/80">Saturday · 15:00</p>
+              </div>
+                <div class="flex flex-col items-center justify-center gap-2">
+                <p class="font-mono uppercase text-black/80">Check Out</p>
+                <h3 class="font-fraunces text-4xl">29 Apr</h3>
+                <p class="font-sans text-black/80">Wednesday · 11:00</p>
+              </div>
+            </div>
+            <hr class="border-dotted mb-5 border-black">
+            <div class="flex flex-col gap-2 mb-5">
+                <div class="flex items-center justify-between">
+                  <p class="font-sans">Room · La Garrigue · 4 nights</p>
+                  <p class="font-mono">€ 620.00</p>
+                </div>
+                <div class="flex items-center justify-between">
+                  <p class="font-sans">Breakfast x 2 guests</p>
+                  <p class="font-mono">€ 96.00</p>
+                </div>
+                <div class="flex items-center justify-between text-[hsl(33_17%_41%)]">
+                  <p class="font-sans">Tourist tax</p>
+                  <p class="font-mono">€ 14.40</p>
+                </div>
+            </div>
+            <hr class="mb-5 border-black">
+            <div class="flex items-center justify-between mb-5">
+              <p class="uppercase font-mono text-black/60">Total paid</p>
+              <p class="font-fraunces text-2xl">€ 730.40</p>
+            </div>
+            <div class="flex items-center justify-between">
+              <p class="uppercase font-mono text-black/60 text-xs">Paid · Wise · GBP</p>
+              <img src="./assets/images/icon-barcode.svg" alt="">
+            </div>
+      </div>
+      <div>
+          <div class="bg-white p-4 rounded-lg border-2 border-black/8 shadow-xs mb-5">
+              <div class="flex items-center justify-between mb-5">
+                  <div class="flex items-center gap-2">
+                    <div class="bg-[hsl(15_74%_41%)] p-2 rounded-md">
+                      <img src="./assets/images/icon-key.svg" alt="">
+                    </div>
+                    <p class="uppercase font-mono text-[hsl(15_74%_41%)] font-medium">Arrival</p>
+                  </div>
+                  <p class="font-fraunces text-[hsl(15_74%_41%)] text-2xl">01</p>
+              </div>
+              <div class="mb-3">
+                <p class="font-fraunces text-2xl mb-1">Check-in from 15:00</p>
+                <p class="font-sans text-sm font-medium text-black/60">Sat, 25 April</p>
+              </div>
+              <p class="font-sans font-medium text-black/70 text-sm">Ring the brass bell by the blue door. If we're at the market, the key is in the terracotta pot by the olive tree.</p>
+          </div>
+          <div class="bg-white p-4 rounded-lg border-2 border-black/8 shadow-xs mb-5">
+              <div class="flex items-center justify-between mb-5">
+                  <div class="flex items-center gap-2">
+                    <div class="bg-[hsl(230_49%_56%)] p-2 rounded-md">
+                      <img src="./assets/images/icon-wifi.svg" alt="">
+                    </div>
+                    <p class="uppercase font-mono text-[hsl(230_49%_56%)] font-medium">Wifi</p>
+                  </div>
+                  <p class="font-fraunces text-[hsl(230_49%_56%)] text-2xl">02</p>
+              </div>
+              <div class="mb-3">
+                <p class="font-fraunces text-2xl mb-1">Le Soleil · Guest</p>
+                <p class="font-sans text-sm font-medium text-black/60">Password below</p>
+              </div>
+              <div class="bg-[hsl(30_24%_93%)] py-2 px-2 rounded-md flex items-center justify-between mb-2">
+                <p class="uppercase font-mono text-black/50 text-sm tracking-wide">Network</p>
+                <p class="font-sans text-sm">Le Soleil · Guest</p>
+              </div>
+              <div class="bg-[hsl(30_24%_93%)] py-2 px-2 rounded-md flex items-center justify-between">
+                <p class="uppercase font-mono text-black/50 text-sm tracking-wide">Password</p>
+                <div class="flex items-center justify-center">
+                  <p class="font-sans text-sm mr-2">soleil-2026</p>
+                  <button class="uppercase text-xs border-1 rounded-full px-2 border-black/50 text-black/50">Copy</button>
+                </div>
+              </div>
+          </div>
+          <div class="bg-white p-4 rounded-lg border-2 border-black/8 shadow-xs mb-5">
+              <div class="flex items-center justify-between mb-5">
+                  <div class="flex items-center gap-2">
+                    <div class="bg-[hsl(340_48%_52%)] p-2 rounded-md">
+                      <img src="./assets/images/icon-breakfast.svg" alt="">
+                    </div>
+                    <p class="uppercase font-mono text-[hsl(340_48%_52%)] font-medium">Breakfast</p>
+                  </div>
+                  <p class="font-fraunces text-[hsl(340_48%_52%)] text-2xl">03</p>
+              </div>
+              <div class="mb-3">
+                <p class="font-fraunces text-2xl mb-1">Served 8 - 10:30</p>
+                <p class="font-sans text-sm font-medium text-black/60">On the terrace</p>
+              </div>
+              <p class="font-sans font-medium text-black/70 text-sm">Fresh figs, Marseille honey, pain au levain, and espresso. Gluten-free option? Leave a note the night before.</p>
+          </div>
+      </div>
+  </main>
+  <div class="fixed h-full w-full bg-[hsl(35_60%_96%)] z-2 top-0 left-[100%] px-5 py-4 flex flex-col justify-between">
+      <div>
+        <div class="flex items-center justify-between  border-b-1 py-3  border-black/20 mb-4">
+          <img class="h-10" src="./assets/images/logo.svg" alt="">
+          <button class="border-1 p-1 rounded-sm border-black/20">
+            <img src="./assets/images/icon-close.svg" alt="">
+          </button>
+        </div>
+        <div class="flex flex-col gap-2">
+            <button class="flex items-center justify-between bg-white w-full py-2 px-4 shadow-xs rounded-md font-sans">
+              <div class="flex items-center gap-2">
+                <img class="h-6" src="./assets/images/icon-bed.svg" alt="">
+                <p class="font-semibold text-[hsl(33_22%_20%)]">Your stay</p>
+              </div>
+              <div class="bg-[hsl(15_74%_41%)] rounded-full w-4 h-4 flex items-center justify-center">
+                  <span class="text-center text-white text-[10px] font-mono">1</span>
+              </div>
+            </button>
+            <button class="flex items-center justify-between  w-full py-2 px-4 rounded-md font-sans">
+              <div class="flex items-center gap-2">
+                <img class="h-6" src="./assets/images/icon-house.svg" alt="">
+                <p class="font-semibold text-[hsl(33_22%_20%)]">The house</p>
+              </div>
+              <div class="hidden bg-[hsl(15_74%_41%)] rounded-full w-4 h-4 flex items-center justify-center">
+                  <span class="text-center text-white text-[10px]">1</span>
+              </div>
+            </button>
+            <button class="flex items-center justify-between  w-full py-2 px-4 rounded-md font-sans">
+                <div class="flex items-center gap-2">
+                  <img class="h-6" src="./assets/images/icon-pin.svg" alt="">
+                  <p class="font-semibold text-[hsl(33_22%_20%)]">Around town</p>
+                </div>
+                <div class="hidden bg-[hsl(15_74%_41%)] rounded-full w-4 h-4 flex items-center justify-center">
+                    <span class="text-center text-white text-[10px]">1</span>
+                </div>
+            </button>
+            <button class="flex items-center justify-between  w-full py-2 px-4 rounded-md font-sans">
+                <div class="flex items-center gap-2">
+                  <img class="h-6" src="./assets/images/icon-breakfast-outline.svg" alt="">
+                  <p class="font-semibold text-[hsl(33_22%_20%)]">Breakfast</p>
+                </div>
+                <div class="hidden bg-[hsl(15_74%_41%)] rounded-full w-4 h-4 flex items-center justify-center">
+                    <span class="text-center text-white text-[10px]">1</span>
+                </div>
+            </button>
+            <button class="flex items-center justify-between  w-full py-2 px-4 rounded-md font-sans">
+                <div class="flex items-center gap-2">
+                  <img class="h-6" src="./assets/images/icon-mail.svg" alt="">
+                  <p class="font-semibold text-[hsl(33_22%_20%)]">Messages</p>
+                </div>
+                <div class="hidden bg-[hsl(15_74%_41%)] rounded-full w-4 h-4 flex items-center justify-center">
+                    <span class="text-center text-white text-[10px]">1</span>
+                </div>
+            </button>
+        </div>
+      </div>
+      <div>
+        <div class="relative flex flex-col bg-[hsl(44_84%_75%)] px-4 py-3 gap-2 rounded-2xl overflow-hidden mb-5">
+            <img class="absolute -top-10 -right-4 h-25" src="./assets/images/icon-weather.svg" alt="">
+            <p class="uppercase font-mono text-black/40 text-sm font-semibold">Today In Cassis</p>
+            <p class="font-fraunces text-4xl">27°</p>
+            <p class="font-sans text-black/40 text-sm font-bold">Sunny · light breeze</p>
+        </div>
+       <hr class="border-dotted mb-5 border-black/20">
+       <div class="font-mono uppercase text-sm text-black/50 font-medium">
+          <p class="mb-3">Est. 1987</p>
+          <p class="mb-3">Maison Soleil · 12 Rue des Oliviers · Cassis</p>
+          <p>© 2026 Maison Soleil</p>
+       </div>
+      </div>
+  </div>
+
+</body>
+</html>
